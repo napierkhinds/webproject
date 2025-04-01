@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="index_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="game-container">
+           <a href="index.html"><img src="images/logo.jpg" class="logo"></a>
+        </div>
+    </header>
+    <article>
+        <div id="category-selection">
+            <div>
+                <div class="column">
+                    <div>
+                        <h1>Sports</h1>
+                        <img src="images/sports2.jpg" alt="Sports" style="width:70%" class="solid shadow-image">
+                        <p>
+                            <input type="radio" id="SportsSelection" name="game_category" value="Sports">
+                              <label for="SportsSelection">To start the OPNsense installer, use the username "installer"
+                                and the password "opnsense". After a fresh install,
+                                the default credentials for accessing the web interface are username "root" and password
+                                "opnsense"</label>
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div>
+                        <h1>Geography</h1>
+                        <img src="images/Geography.jpg" alt="Geography" style="width:70%" class="solid shadow-image">
+                        <p>
+                            <input type="radio" id="GeographySelection" name="game_category" value="Geography">
+                            <label for="GeographySelection">To start the OPNsense installer, use the username
+                                "installer" and the password "opnsense". After a fresh install,
+                                the default credentials for accessing the web interface are username "root" and password
+                                "opnsense"</label>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <h1>Mythology</h1>
+                        <img src="images/mythology2.jpg" alt="Mythology" style="width:70%" class="solid shadow-image">
+                        <p>
+                            <input type="radio" id="MythologySelection" name="game_category" value="Mythology">
+                            <label for="MythologySelection">To start the OPNsense installer, use the username
+                                "installer" and the password "opnsense". After a fresh install,
+                                the default credentials for accessing the web interface are username "root" and password
+                                "opnsense"</label>
+                        </p>
+                    </div>
+                </div>
+                <br class="clear" />
+                <br />
+                <div class="center">
+                    <button class="greenBtn" id="startGameBtn">START GAME</button>
+                    <div id="messages" class="red_text"></div>
+
+                    <div class="container" id="gamePlay">
+                        <h1>Trivia Game</h1>
+                        <div id="quiz" class="quiz_container"></div>
+                        <p id="score" class="userScore">Score: 0</p>
+                        <button id="next" style="display: none;" class="greenBtn">Next Question</button>
+                        <button id="prev" class="prevBtn" style="display: none"> Previous Question </button>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+        </h1>
+    </article>
+
+
+
+
+
+
+    <!--footer>
+    Hello world
+</footer -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
