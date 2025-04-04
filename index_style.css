@@ -25,7 +25,7 @@
   width: 33.33%;
   padding: 2px 2px 2px 55px;
   position: relative;
-  /* Ensure the columns are positioned correctly */
+  text-align: center;
 }
 
 .column img {
@@ -54,6 +54,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #141816;
 }
 
 /* Style the header */
@@ -63,6 +64,28 @@ header {
   text-align: center;
   font-size: 35px;
   color: white;
+}
+nav{
+  background-color: #0f1411;
+  display: bloick;
+  text-align: center;
+  margin: 15px;
+ 
+  }
+
+.navButtons {
+  background: rgb(230, 0, 255);
+  width: 150px;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px;
+  color: #fdfeff;
+  background-color: #08089c;
+  display: inline-block;
+
 }
 
 .red_text {
@@ -139,15 +162,6 @@ color: white;
 
 }
 
-
-
-
-
-
-
-
-
-
 .quiz_container {
   margin: auto;
   text-align: center;
@@ -189,4 +203,3 @@ button:hover {
   background-color: #218838;
 }
 
-;
