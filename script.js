@@ -1,3 +1,28 @@
+window.onload = function () {
+    const darkTheme = document.getElementById("dark-theme");
+    const lightTheme = document.getElementById("light-theme");
+    const savedTheme = localStorage.getItem("theme");
+  
+    if (savedTheme === "light") {
+      darkTheme.disabled = true;
+      lightTheme.disabled = false;
+    }
+  
+    document.getElementById("themeToggleBtn").onclick = function () {
+      const isCurrentlyDark = !darkTheme.disabled;
+  
+      darkTheme.disabled = isCurrentlyDark;
+      lightTheme.disabled = !isCurrentlyDark;
+  
+      localStorage.setItem("theme", isCurrentlyDark ? "light" : "dark");
+    };
+  };
+ 
+  
+
+  /////////////////////////////////////////////////////////////////////////
+
+
 $(document).ready(function () {
     var userSelection;
     var selectedValue = 0;
@@ -72,6 +97,11 @@ function beginGamePlay (){
         //////////////////////////////////////////////////////////////////
 
      
+
+
+          
+
+
 
         async function fetchQuestions() {
             const response = await fetch("https://opentdb.com/api.php?amount=2&type=multiple&category=" + selectedValue);

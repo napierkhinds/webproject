@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Game</title>
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="index_style.css" id="light-theme">
+    <link rel="stylesheet" href="light_index_style.css" id="dark-theme" disabled>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -19,7 +21,7 @@
     <nav>
         <div>
                <button id="play"  class="navButtons">Toggle Sound </button> 
-        <button id="pause" class="navButtons"> Change Theme </button> 
+               <button id="themeToggleBtn" class="navButtons">Toggle Theme</button>
         </div>
      
         
@@ -30,8 +32,10 @@
                 <div class="column">
                     <div>
                         <h1>Sports</h1>
-                        <img src="images/sports2.jpg" alt="Sports" style="width:70%" class="solid shadow-image">
-                        <p>
+                        <label for="SportsSelection">
+                            <img src="images/sports2.jpg" alt="Sports" style="width:70%" class="solid shadow-image">
+                          </label>
+                          <p>
                             <input type="radio" id="SportsSelection" name="game_category" value="Sports">
                               <label for="SportsSelection">To start the OPNsense installer, use the username "installer"
                                 and the password "opnsense". After a fresh install,
@@ -45,8 +49,10 @@
                 <div class="column">
                     <div>
                         <h1>Geography</h1>
-                        <img src="images/Geography.jpg" alt="Geography" style="width:70%" class="solid shadow-image">
-                        <p>
+                        <label for="GeographySelection">
+                            <img src="images/Geography.jpg" alt="Geography" style="width:70%" class="solid shadow-image">
+                          </label>
+                          <p>
                             <input type="radio" id="GeographySelection" name="game_category" value="Geography">
                             <label for="GeographySelection">To start the OPNsense installer, use the username
                                 "installer" and the password "opnsense". After a fresh install,
@@ -59,8 +65,10 @@
                 <div class="column">
                     <div>
                         <h1>Mythology</h1>
-                        <img src="images/mythology2.jpg" alt="Mythology" style="width:70%" class="solid shadow-image">
-                        <p>
+                        <label for="MythologySelection">
+                            <img src="images/mythology2.jpg" alt="Mythology" style="width:70%" class="solid shadow-image">
+                          </label>
+                          <p>
                             <input type="radio" id="MythologySelection" name="game_category" value="Mythology">
                             <label for="MythologySelection">To start the OPNsense installer, use the username
                                 "installer" and the password "opnsense". After a fresh install,
