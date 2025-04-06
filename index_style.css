@@ -3,10 +3,10 @@
 }
 
 .container {
-  background: rgb(79, 111, 129);
+  background: #229EC9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px #ffffff;
   text-align: center;
   color: #ffffff;
 
@@ -50,7 +50,7 @@
 .logo {
   border-radius: 50%;            /* Circular logo */
   width: 10%;                    /* Adjust size as needed */
-  box-shadow: 0 5px 15px #F0D122;
+  box-shadow: 0 10px 15px #24A7D0;
   max-width: 100%;                /* Ensure responsiveness */
   height: auto;   
 }
@@ -168,7 +168,7 @@ color: #F5F5F5;
 
 .shadow-image:hover {
 
-  box-shadow: 0 5px 15px #F0D122;
+  box-shadow: 0 5px 15px #24A7D0;
   transform: translateY(-15px);
 
 }

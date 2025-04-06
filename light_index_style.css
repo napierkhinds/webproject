@@ -2,18 +2,66 @@
   box-sizing: border-box;
 }
 
-.container {
-  background: rgb(79, 111, 129);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  color: #ffffff;
+header {
+  position: relative;
+  height: 200px;                 
+  background: linear-gradient(90deg, #000C5E, #24A7D0);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  
+  display: flex;                 
+  justify-content: center;       
+  align-items: center;           
+  text-align: center;             
+}
+
+nav{
+background-color: #F5F5F5;
+display: block;
+width: auto;
+text-align: center;
+margin: 15px;
 
 }
 
+.navButtons {
+background: #24A7D0;
+width: 150px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+padding: 20px;
+color: #ffffff;
+display: inline-block;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F5F5;
+}
+
+.container {
+  background: #229EC9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #04B2EF;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.quiz_container {
+  margin: auto;
+  text-align: center;
+}
+
 .userScore {
-  color: red;
+  color: #000C5E;
+  font-size:x-large;
+  font-weight: bold;
 }
 
 .clear {
@@ -37,70 +85,21 @@
   border-radius: 25%;
   border-color: #2B88D0;
   width: 100%;
-  /* Ensure images fill the container */
   height: auto;
-  /* Maintain image aspect ratio */
+ 
 }
 
-/* Center the logo */
 .center {
   text-align: center;
 }
 
 .logo {
-  border-radius: 50%;            /* Circular logo */
-  width: 10%;                    /* Adjust size as needed */
-  box-shadow: 0 5px 15px #F0D122;
-  max-width: 100%;                /* Ensure responsiveness */
+  border-radius: 50%;            
+  width: 10%;                    
+  box-shadow: 0 10px 15px #24A7D0;
+  max-width: 100%;              
   height: auto;   
 }
-
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #F5F5F5;
-}
-
-
-header {
-
-    position: relative;
-    height: 200px;                 
-    background: linear-gradient(90deg, #000C5E, #24A7D0);
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    
-    display: flex;                 
-    justify-content: center;       
-    align-items: center;           
-    text-align: center;             
-  
-
-}
-
-nav{
-  background-color: #F5F5F5;
-  display: block;
-  width: auto;
-  text-align: center;
-  margin: 15px;
- 
-  }
-
-.navButtons {
-  background: #24A7D0;
-  width: 150px;
-  -webkit-transition-duration: .4s;
-  transition-duration: .4s;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 20px;
-  color: #ffffff;
-  display: inline-block;
-  
-}
-
 
 
 .red_text {
@@ -128,7 +127,6 @@ nav{
 }
 
 .prevBtn {
-  background: rgb(230, 0, 255);
   width: 400px;
   -webkit-transition-duration: .4s;
   transition-duration: .4s;
@@ -163,21 +161,12 @@ color: rgb(0, 0, 0);
 
 
 .shadow-image {
-
   transition: box-shadow 0.2s ease, transform 0.3s ease;
-
 }
 
 .shadow-image:hover {
-
-  box-shadow: 0 5px 15px #F0D122;
+  box-shadow: 0 5px 15px #24A7D0;
   transform: translateY(-15px);
-
-}
-
-.quiz_container {
-  margin: auto;
-  text-align: center;
 }
 
 
@@ -209,14 +198,13 @@ button:hover {
 }
 
 #next {
-  background-color: #28a745;
+  background-color: #0F4C8D;
 }
 
 #next:hover {
-  background-color: #218838;
+  background-color: #180D2B;
 }
 
 .navButtons:hover{
 background-color: #000C5E;
-
 }
