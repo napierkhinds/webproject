@@ -3,6 +3,8 @@ window.onload = function () {
     const lightTheme = document.getElementById("light-theme");
     const savedTheme = localStorage.getItem("theme");
   
+  
+
     if (savedTheme === "light") {
       darkTheme.disabled = true;
       lightTheme.disabled = false;
@@ -27,6 +29,7 @@ $(document).ready(function () {
     var userSelection;
     var selectedValue = 0;
     $("#gamePlay").hide(); // hide Game Play container
+    
     const audio = new Audio("https://cdn.freesound.org/previews/668/668879_10859468-lq.mp3");
    
 
@@ -63,6 +66,8 @@ function beginGamePlay (){
         const prevButton = document.getElementById("prev");
         const restartButton = document.getElementById("restart");
         const scoreContainer = document.getElementById("score");
+        const homeBtn = document.getElementById("home");
+
         let currentQuestionIndex = 0;
         let score = 0;
         let questions = [];
@@ -92,16 +97,12 @@ function beginGamePlay (){
         // if a valid option is selected from the 3 categories show game play
         if (selectedValue != 0) {
             $("#gamePlay").show();
+            $("#h1").hide();
         }
 
         //////////////////////////////////////////////////////////////////
 
      
-
-
-          
-
-
 
         async function fetchQuestions() {
             const response = await fetch("https://opentdb.com/api.php?amount=2&type=multiple&category=" + selectedValue);
@@ -117,13 +118,14 @@ function beginGamePlay (){
                 nextButton.style.display = "none";
                 prevButton.style.display = "none";
                 restartButton.style.display = "block";
-
+                homeBtn.style.display = "block";
         
                 return;
             }
             else
             {
-                restartButton.style.display = "none";    
+                restartButton.style.display = "none"; 
+                homeBtn.style.display = "none"
             }
 
             const questionData = questions[currentQuestionIndex];
@@ -161,6 +163,12 @@ function beginGamePlay (){
         nextButton.addEventListener("click", () => {
             currentQuestionIndex++;
             showQuestion();
+        });
+
+
+        homeBtn.addEventListener("click", function() {
+            window.location.href = "index.html";
+            $("#h1").hide();
         });
 
         prevButton.addEventListener("click", () => {

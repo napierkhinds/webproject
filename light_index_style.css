@@ -159,6 +159,11 @@ color: rgb(0, 0, 0);
 
 }
 
+h2 {
+  color: rgb(0, 0, 0);
+  
+  }
+
 
 .shadow-image {
   transition: box-shadow 0.2s ease, transform 0.3s ease;
