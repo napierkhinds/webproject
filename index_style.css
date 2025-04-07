@@ -13,7 +13,9 @@
 }
 
 .userScore {
-  color: red;
+  color: #ffffff;
+  font-size:x-large;
+  font-weight: bold;
 }
 
 .clear {
@@ -202,8 +204,8 @@ button:hover {
 }
 
 .answer {
-  background-color: #ddd;
-  color: black;
+  background-color: #353535;
+  color: white;
   width: 300px;
 }
 
@@ -212,11 +214,11 @@ button:hover {
 }
 
 #next {
-  background-color: #28a745;
+  background-color: #0F4C8D;
 }
 
 #next:hover {
-  background-color: #218838;
+ background-color: #180D2B;
 }
 
 .navButtons:hover{
