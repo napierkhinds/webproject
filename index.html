@@ -5,120 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Game
-    
+
     </title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="index_style.css" id="dark-theme">
     <link rel="stylesheet" href="light_index_style.css" id="light-theme" disabled>
-  
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
         <div id="game-container">
-           <a href="index.html"><img src="images/logo.jpg" class="logo"></a>
+            <a href="index.html"><img src="images/logo.jpg" class="logo"></a>
         </div>
-       
+
     </header>
     <nav>
         <div>
-               <button id="play"  class="navButtons">Toggle Sound </button> 
-               <button id="themeToggleBtn" class="navButtons">Toggle Theme</button>
+            <button id="play" class="navButtons">Toggle Sound </button>
+            <button id="themeToggleBtn" class="navButtons">Toggle Theme</button>
         </div>
-     
-        
     </nav>
-  
-    
+
     <h1 class="center" id="h1">Select The Category To Get Started </h1>
 
-        <div id="category-selection">
-            <div>
-                <div class="column">
-                    <div>
-                        <h2>Sports</h2>
-                        <label for="SportsSelection">
-                            <img src="images/sports2.jpg" alt="Sports" style="width:70%" class="solid shadow-image">
-                          </label>
-                          <p>
-                            <input type="radio" id="SportsSelection" name="game_category" value="Sports">
-                              <label for="SportsSelection">To start the OPNsense installer, use the username "installer"
-                                and the password "opnsense". After a fresh install,
-                                the default credentials for accessing the web interface are username "root" and password
-                                "opnsense"</label>
-
-                        </p>
-                    </div>
-
+    <div id="category-selection">
+        <div>
+            <div class="column">
+                <div>
+                    <h2>Sports</h2>
+                    <label for="SportsSelection">
+                        <img src="images/sports2.jpg" alt="Sports" style="width:70%" class="solid shadow-image">
+                    </label>
+                    <p class="p2">
+                        <input type="radio" id="SportsSelection" name="game_category" value="Sports">
+                          <label for="SportsSelection">Ready to show off your athletic knowledge?<br>
+                            From the field to the court,
+                            test your skills <br> and see if you’re a true sports fanatic!</label>
+                    </p>
                 </div>
-                <div class="column">
-                    <div>
-                        <h2>Geography</h2>
-                        <label for="GeographySelection">
-                            <img src="images/Geography.jpg" alt="Geography" style="width:70%" class="solid shadow-image">
-                          </label>
-                          <p>
-                            <input type="radio" id="GeographySelection" name="game_category" value="Geography">
-                            <label for="GeographySelection">To start the OPNsense installer, use the username
-                                "installer" and the password "opnsense". After a fresh install,
-                                the default credentials for accessing the web interface are username "root" and password
-                                "opnsense"</label>
-
-                        </p>
-                    </div>
+            </div>
+            <div class="column">
+                <div>
+                    <h2>Geography</h2>
+                    <label for="GeographySelection">
+                        <img src="images/Geography.jpg" alt="Geography" style="width:70%" class="solid shadow-image">
+                    </label>
+                    <p class="p2">
+                        <input type="radio" id="GeographySelection" name="game_category" value="Geography">
+                        <label for="GeographySelection">Pack your bags, it’s time to travel the world!
+                            <br>How well do you know the continents, countries,
+                            and <br> landmarks that make our planet amazing?</label>
+                    </p>
                 </div>
-                <div class="column">
-                    <div>
-                        <h2>Mythology</h2>
-                        <label for="MythologySelection">
-                            <img src="images/mythology2.jpg" alt="Mythology" style="width:70%" class="solid shadow-image">
-                          </label>
-                          <p>
-                            <input type="radio" id="MythologySelection" name="game_category" value="Mythology">
-                            <label for="MythologySelection">To start the OPNsense installer, use the username
-                                "installer" and the password "opnsense". After a fresh install,
-                                the default credentials for accessing the web interface are username "root" and password
-                                "opnsense"</label>
-                        </p>
-                    </div>
+            </div>
+            <div class="column">
+                <div>
+                    <h2>Mythology</h2>
+                    <label for="MythologySelection">
+                        <img src="images/mythology2.jpg" alt="Mythology" style="width:70%" class="solid shadow-image">
+                    </label>
+                    <p class="p2">
+                        <input type="radio" id="MythologySelection" name="game_category" value="Mythology">
+                        <label for="MythologySelection">Enter the realm of gods, heroes, <br> and mythical creatures!
+                            Can you unravel the <br> stories that shaped civilizations and legends?</label>
+                    </p>
                 </div>
-                <br class="clear" />
-                <br />
-                <div class="center">
-                    <button class="greenBtn" id="startGameBtn">START GAME</button>
-                    <div id="messages" class="red_text"></div>
+            </div>
+            <br class="clear" />
+            <br />
+            <div class="center">
+                <button class="greenBtn" id="startGameBtn">START GAME</button>
+                <div id="messages" class="red_text"></div>
 
-                    <div class="container" id="gamePlay">
-                        <h1>Trivia Game</h1>
-                        <div id="quiz" class="quiz_container"></div>
-                        <p id="score" class="userScore">Score: 0</p>
-                        <button id="next" style="display: none;" class="greenBtn">Next Question</button>
-                        <button id="prev" class="prevBtn" style="display: none"> Previous Question </button>
-                        <button id="restart" class="prevBtn restartBtn" style="display: none"> Restart Game </button>
-                        <button id="home" class="prevBtn restartBtn" style="display: none"> Game Categories </button>
-                    </div>
-
+                <div class="container" id="gamePlay">
+                    <h1>Trivia Game</h1>
+                    <div id="quiz" class="quiz_container"></div>
+                    <p id="score" class="userScore">Score: 0</p>
+                    <button id="next" style="display: none;" class="greenBtn">Next Question</button>
+                    <button id="prev" class="prevBtn" style="display: none"> Previous Question </button>
+                    <button id="restart" class="prevBtn restartBtn" style="display: none"> Restart Game </button>
+                    <button id="home" class="prevBtn restartBtn" style="display: none"> Game Categories </button>
                 </div>
 
             </div>
+
         </div>
-        </div>
-        </div>
-        </h1>
-    
-
-
-
-
-
-
+    </div>
+    </div>
+    </div>
+    </h1>
     <footer>
         © 2025 All rights reserved.
         <br>
         Kemar Hinds - 40723880
-</footer -->
+    </footer -->
     <script src="script.js"></script>
 
 </body>

@@ -14,7 +14,7 @@
 
 .userScore {
   color: #ffffff;
-  font-size:x-large;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -50,11 +50,14 @@
 }
 
 .logo {
-  border-radius: 50%;            /* Circular logo */
-  width: 10%;                    /* Adjust size as needed */
+  border-radius: 50%;
+  /* Circular logo */
+  width: 10%;
+  /* Adjust size as needed */
   box-shadow: 0 10px 15px #24A7D0;
-  max-width: 100%;                /* Ensure responsiveness */
-  height: auto;   
+  max-width: 100%;
+  /* Ensure responsiveness */
+  height: auto;
 }
 
 
@@ -66,28 +69,28 @@ body {
 
 header {
 
-    position: relative;
-    height: 200px;                 
-    background: linear-gradient(90deg, #000C5E, #24A7D0);
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    
-    display: flex;                 
-    justify-content: center;       
-    align-items: center;           
-    text-align: center;             
-  
+  position: relative;
+  height: 200px;
+  background: linear-gradient(90deg, #000C5E, #24A7D0);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 
 }
 
-nav{
+nav {
   background-color: #121212;
   display: block;
   width: auto;
   text-align: center;
   margin: 15px;
- 
-  }
+
+}
 
 .navButtons {
   background: #24A7D0;
@@ -121,10 +124,10 @@ nav{
 
 }
 
-.greenBtn:hover{
+.greenBtn:hover {
   color: #ffffff;
   background: #24A7D0;
-  
+
 }
 
 .prevBtn {
@@ -152,19 +155,26 @@ footer {
 }
 
 p {
-  color:#F5F5F5;
+  color: #F5F5F5;
+
+}
+
+.p2 {
+  
+  color: #F5F5F5;
+  align-content: center;
 
 }
 
 h1 {
-color: #F5F5F5;
+  color: #F5F5F5;
 
 }
 
 h2 {
   color: #F5F5F5;
-  
-  }
+
+}
 
 
 .shadow-image {
@@ -218,9 +228,9 @@ button:hover {
 }
 
 #next:hover {
- background-color: #180D2B;
+  background-color: #180D2B;
 }
 
-.navButtons:hover{
+.navButtons:hover {
   background-color: #000C5E;
 }
