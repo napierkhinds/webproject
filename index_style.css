@@ -1,27 +1,90 @@
+/* Applies border-box sizing to all elements for consistent padding and border calculations */
 * {
   box-sizing: border-box;
 }
 
+/* HEADER STYLING */
+header {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(90deg, #000C5E, #24A7D0);
+  /* Horizontal gradient */
+  border-bottom-left-radius: 50% 20%;
+  /* Rounded bottom corners */
+  border-bottom-right-radius: 50% 20%;
+
+  display: flex;
+  /* Centering content */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* NAVIGATION BAR */
+nav {
+  background-color: #121212;
+  /* Dark background */
+  display: block;
+  width: auto;
+  text-align: center;
+  margin: 15px;
+}
+
+/* BUTTONS IN NAVIGATION */
+.navButtons {
+  background: #24A7D0;
+  /* Button background */
+  width: 150px;
+  transition-duration: .4s;
+  /* Smooth hover transition */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px;
+  color: #ffffff;
+  /* White text */
+  display: inline-block;
+}
+
+/* GLOBAL BODY STYLE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+  /* Dark mode background */
+}
+
+/* MAIN CONTENT CONTAINER */
 .container {
   background: #229EC9;
+  /* Bright blue background */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px #ffffff;
+  /* White glow */
   text-align: center;
   color: #ffffff;
-
+  /* White text */
 }
 
+/* QUIZ WRAPPER */
+.quiz_container {
+  margin: auto;
+  text-align: center;
+}
+
+/* USER SCORE DISPLAY */
 .userScore {
   color: #ffffff;
   font-size: x-large;
   font-weight: bold;
 }
 
+/* CLEAR FLOATS */
 .clear {
   clear: both;
 }
 
+/* COLUMN LAYOUT FOR GRID SECTIONS */
 .column {
   float: left;
   width: 33.33%;
@@ -30,110 +93,65 @@
   text-align: center;
 }
 
+/* IMAGES INSIDE COLUMNS */
 .column img {
-  margin: 20px 0
+  margin: 20px 0;
 }
 
+/* STYLE FOR IMAGE THUMBNAILS */
 .solid {
   border-style: none;
   border-radius: 25%;
   border-color: #2B88D0;
   width: 100%;
-  /* Ensure images fill the container */
   height: auto;
-  /* Maintain image aspect ratio */
+  /* Maintain aspect ratio */
 }
 
-/* Center the logo */
+/* CENTER ALIGNMENT */
 .center {
   text-align: center;
 }
 
+/* LOGO IMAGE STYLING */
 .logo {
   border-radius: 50%;
-  /* Circular logo */
+  /* Circular shape */
   width: 10%;
-  /* Adjust size as needed */
+  /* Relative size */
   box-shadow: 0 10px 15px #24A7D0;
+  /* Shadow glow */
   max-width: 100%;
-  /* Ensure responsiveness */
   height: auto;
 }
 
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #121212;
-}
-
-
-header {
-
-  position: relative;
-  height: 200px;
-  background: linear-gradient(90deg, #000C5E, #24A7D0);
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-
-}
-
-nav {
-  background-color: #121212;
-  display: block;
-  width: auto;
-  text-align: center;
-  margin: 15px;
-
-}
-
-.navButtons {
-  background: #24A7D0;
-  width: 150px;
-  -webkit-transition-duration: .4s;
-  transition-duration: .4s;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 20px;
-  color: #ffffff;
-  display: inline-block;
-
-}
-
+/* STYLES FOR ERROR MESSAGES */
 .red_text {
   color: red;
   margin: 10px 0;
 }
 
+/* PRIMARY BUTTON STYLING */
 .greenBtn {
   background: #000C5E;
   width: 400px;
-  -webkit-transition-duration: .4s;
   transition-duration: .4s;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   padding: 12px 28px;
   color: #fff;
-
 }
 
+/* HOVER EFFECT FOR PRIMARY BUTTON */
 .greenBtn:hover {
   color: #ffffff;
   background: #24A7D0;
-
 }
 
+/* PREVIOUS/NAVIGATION BUTTON STYLING */
 .prevBtn {
-  background: rgb(230, 0, 255);
   width: 400px;
-  -webkit-transition-duration: .4s;
   transition-duration: .4s;
   border-radius: 4px;
   cursor: pointer;
@@ -143,8 +161,7 @@ nav {
   background-color: #08089c;
 }
 
-
-
+/* FOOTER STYLING */
 footer {
   background-color: #121212;
   padding: 20px;
@@ -154,48 +171,34 @@ footer {
   position: relative;
 }
 
+/* TEXT ELEMENT COLORS */
 p {
   color: #F5F5F5;
-
 }
 
 .p2 {
-  
   color: #F5F5F5;
   align-content: center;
-
+  /* Not effective on text—consider using text-align */
 }
 
-h1 {
-  color: #F5F5F5;
-
-}
-
+h1,
 h2 {
   color: #F5F5F5;
-
 }
 
-
+/* IMAGE HOVER ANIMATION */
 .shadow-image {
-
   transition: box-shadow 0.2s ease, transform 0.3s ease;
-
 }
 
 .shadow-image:hover {
-
   box-shadow: 0 5px 15px #24A7D0;
   transform: translateY(-15px);
-
+  /* Subtle lift effect */
 }
 
-.quiz_container {
-  margin: auto;
-  text-align: center;
-}
-
-
+/* DEFAULT BUTTON STYLING */
 button {
   display: block;
   width: 100%;
@@ -206,23 +209,29 @@ button {
   cursor: pointer;
   font-size: 16px;
   background-color: #007bff;
+  /* Bootstrap-style blue */
   color: white;
 }
 
 button:hover {
   background-color: #180D2B;
+  /* Dark purple on hover */
 }
 
+/* ANSWER CHOICE STYLING */
 .answer {
   background-color: #353535;
+  /* Dark grey */
   color: white;
   width: 300px;
 }
 
 .answer:hover {
   background-color: #bbb;
+  /* Light grey on hover */
 }
 
+/* NEXT BUTTON STYLING */
 #next {
   background-color: #0F4C8D;
 }
@@ -231,6 +240,7 @@ button:hover {
   background-color: #180D2B;
 }
 
+/* NAV BUTTON HOVER */
 .navButtons:hover {
   background-color: #000C5E;
 }

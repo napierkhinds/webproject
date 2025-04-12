@@ -1,48 +1,50 @@
+/* Apply box-sizing to all elements for consistent layout sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Header styling: centered flexbox with a gradient background and rounded bottom corners */
 header {
   position: relative;
-  height: 200px;                 
+  height: 200px;
   background: linear-gradient(90deg, #000C5E, #24A7D0);
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
-  
-  display: flex;                 
-  justify-content: center;       
-  align-items: center;           
-  text-align: center;             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-nav{
-background-color: #F5F5F5;
-display: block;
-width: auto;
-text-align: center;
-margin: 15px;
-
+/* Navigation bar styling */
+nav {
+  background-color: #F5F5F5;
+  display: block;
+  width: auto;
+  text-align: center;
+  margin: 15px;
 }
 
+/* Buttons inside navigation */
 .navButtons {
-background: #24A7D0;
-width: 150px;
--webkit-transition-duration: .4s;
-transition-duration: .4s;
-border-radius: 4px;
-cursor: pointer;
-font-size: 16px;
-padding: 20px;
-color: #ffffff;
-display: inline-block;
-
+  background: #24A7D0;
+  width: 150px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px;
+  color: #ffffff;
+  display: inline-block;
 }
 
+/* Base body styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #F5F5F5;
 }
 
+/* Container for gameplay */
 .container {
   background: #229EC9;
   padding: 20px;
@@ -52,22 +54,25 @@ body {
   color: #ffffff;
 }
 
-
+/* Container for quiz questions */
 .quiz_container {
   margin: auto;
   text-align: center;
 }
 
+/* Score display style */
 .userScore {
   color: #000C5E;
-  font-size:x-large;
+  font-size: x-large;
   font-weight: bold;
 }
 
+/* Utility class to clear floats */
 .clear {
   clear: both;
 }
 
+/* Column layout for categories */
 .column {
   float: left;
   width: 33.33%;
@@ -76,60 +81,62 @@ body {
   text-align: center;
 }
 
+/* Style for category images */
 .column img {
-  margin: 20px 0
+  margin: 20px 0;
 }
 
+/* Solid image style with round borders */
 .solid {
   border-style: none;
   border-radius: 25%;
   border-color: #2B88D0;
   width: 100%;
   height: auto;
- 
 }
 
+/* Center-align text */
 .center {
   text-align: center;
 }
 
+/* Logo image style */
 .logo {
-  border-radius: 50%;            
-  width: 10%;                    
+  border-radius: 50%;
+  width: 10%;
   box-shadow: 0 10px 15px #24A7D0;
-  max-width: 100%;              
-  height: auto;   
+  max-width: 100%;
+  height: auto;
 }
 
-
+/* Red text for error or alert messages */
 .red_text {
   color: red;
   margin: 10px 0;
 }
 
+/* Start game button */
 .greenBtn {
   background: #000C5E;
   width: 400px;
-  -webkit-transition-duration: .4s;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   padding: 12px 28px;
   color: #fff;
-
 }
 
-.greenBtn:hover{
+/* Hover effect for green buttons */
+.greenBtn:hover {
   color: #ffffff;
   background: #24A7D0;
-  
 }
 
+/* Previous, Restart, Home button styles */
 .prevBtn {
   width: 400px;
-  -webkit-transition-duration: .4s;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -138,33 +145,31 @@ body {
   background-color: #08089c;
 }
 
-
-
+/* Footer styling */
 footer {
   background-color: #F5F5F5;
   padding: 20px;
   text-align: center;
   width: 100%;
-  color:rgb(0, 0, 0) ;
+  color: rgb(0, 0, 0);
   position: relative;
 }
 
+/* Paragraph text color */
 p {
   color: rgb(0, 0, 0);
-
 }
 
+/* Heading styles */
 h1 {
-color: rgb(0, 0, 0);
-
+  color: rgb(0, 0, 0);
 }
 
 h2 {
   color: rgb(0, 0, 0);
-  
-  }
+}
 
-
+/* Shadow hover effect for images */
 .shadow-image {
   transition: box-shadow 0.2s ease, transform 0.3s ease;
 }
@@ -174,7 +179,7 @@ h2 {
   transform: translateY(-15px);
 }
 
-
+/* Base button style (used as a fallback) */
 button {
   display: block;
   width: 100%;
@@ -188,28 +193,34 @@ button {
   color: white;
 }
 
+/* General button hover effect */
 button:hover {
   background-color: #180D2B;
 }
 
+/* Answer choice button */
 .answer {
-  background-color: #180D2B;
+  background-color: #ffffff;
   color: black;
   width: 300px;
 }
 
+/* Hover effect for answer buttons */
 .answer:hover {
   background-color: #bbb;
 }
 
+/* Specific style for the 'Next Question' button */
 #next {
   background-color: #0F4C8D;
 }
 
+/* Hover effect for next button */
 #next:hover {
   background-color: #180D2B;
 }
 
-.navButtons:hover{
-background-color: #000C5E;
+/* Hover effect for navigation buttons */
+.navButtons:hover {
+  background-color: #000C5E;
 }
