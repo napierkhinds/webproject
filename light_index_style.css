@@ -1,8 +1,7 @@
-/* Apply box-sizing to all elements for consistent layout sizing */
+/* Applies border-box sizing to all elements for consistent padding and border calculations */
 * {
   box-sizing: border-box;
 }
-
 /* Header styling: centered flexbox with a gradient background and rounded bottom corners */
 header {
   position: relative;
@@ -62,7 +61,7 @@ body {
 
 /* Score display style */
 .userScore {
-  color: #000C5E;
+  color: #000000;
   font-size: x-large;
   font-weight: bold;
 }
@@ -160,14 +159,17 @@ p {
   color: rgb(0, 0, 0);
 }
 
+
 /* Heading styles */
 h1 {
   color: rgb(0, 0, 0);
 }
 
+
 h2 {
-  color: rgb(0, 0, 0);
+  color: rgb(9, 9, 9);
 }
+
 
 /* Shadow hover effect for images */
 .shadow-image {
@@ -211,12 +213,12 @@ button:hover {
 }
 
 /* Specific style for the 'Next Question' button */
-#next {
+.next {
   background-color: #0F4C8D;
 }
 
 /* Hover effect for next button */
-#next:hover {
+.next:hover {
   background-color: #180D2B;
 }
 
@@ -224,3 +226,4 @@ button:hover {
 .navButtons:hover {
   background-color: #000C5E;
 }
+

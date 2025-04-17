@@ -221,7 +221,6 @@ button:hover {
 /* ANSWER CHOICE STYLING */
 .answer {
   background-color: #353535;
-  /* Dark grey */
   color: white;
   width: 300px;
 }
@@ -232,11 +231,11 @@ button:hover {
 }
 
 /* NEXT BUTTON STYLING */
-#next {
+.next {
   background-color: #0F4C8D;
 }
 
-#next:hover {
+.next:hover {
   background-color: #180D2B;
 }
 

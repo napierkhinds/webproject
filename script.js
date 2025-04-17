@@ -101,7 +101,7 @@ $(document).ready(function () {
 
             // Fetch trivia questions from API
             async function fetchQuestions() {
-                const response = await fetch("https://opentdb.com/api.php?amount=2&type=multiple&category=" + selectedValue);
+                const response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple&category=" + selectedValue);
                 const data = await response.json();
                 questions = data.results;
                 showQuestion();
