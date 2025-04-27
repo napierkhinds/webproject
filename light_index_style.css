@@ -159,13 +159,19 @@ p {
   color: rgb(0, 0, 0);
 }
 
+/* paragraph for category selcetion */ 
+.p2 {
+  color: #000000;
+text-align:justify;
+}
 
-/* Heading styles */
+
+/* H1 Heading styles */
 h1 {
   color: rgb(0, 0, 0);
 }
 
-
+/* H2 Heading styles */
 h2 {
   color: rgb(9, 9, 9);
 }

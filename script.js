@@ -36,7 +36,7 @@ $(document).ready(function () {
     // Load and prepare background music
     const audio = new Audio("https://cdn.freesound.org/previews/668/668879_10859468-lq.mp3");
 
-    // Play or pause music when #play button is clicked
+    // Play or pause music when play button is clicked
     $('#play').click(function () {
         if (audio.paused == true) {
             audio.play();
@@ -96,7 +96,7 @@ $(document).ready(function () {
             // If a valid category was chosen, start game
             if (selectedValue != 0) {
                 $("#gamePlay").show(); // Reveal game area
-                $("#h1").hide();       // Hide header/title if necessary
+                $("#h1").hide();       // Hide header/title
             }
 
             // Fetch trivia questions from API
@@ -138,7 +138,7 @@ $(document).ready(function () {
                 });
 
                 // Show prev button only if not on the first question
-                prevButton.style.display = currentQuestionIndex > 0 ? "block" : "none";
+                prevButton.style.display = "none" // currentQuestionIndex > 0 ? "block" : "none";
                 nextButton.style.display = "none"; // Hide next until user selects an answer
             }
 
@@ -170,10 +170,10 @@ $(document).ready(function () {
             });
 
             // Go to previous question
-            prevButton.addEventListener("click", () => {
-                currentQuestionIndex--;
-                showQuestion();
-            });
+            //prevButton.addEventListener("click", () => {
+              //  currentQuestionIndex--;
+                //showQuestion();
+            //});
 
             // Initial question load
             fetchQuestions();

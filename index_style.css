@@ -178,11 +178,13 @@ p {
 
 .p2 {
   color: #F5F5F5;
-  align-content: center;
-  /* Not effective on text—consider using text-align */
+text-align:justify;
 }
 
-h1,
+/* H1 Heading styles */
+h1 {
+  color: rgb(255, 255, 255);
+}
 h2 {
   color: #F5F5F5;
 }
