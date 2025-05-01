@@ -110,16 +110,18 @@
 
                 <!-- Game play section, initially hidden until game starts -->
                 <div class="container" id="gamePlay">
-                    <h1>Trivia Game</h1>
+                    <h1 class="h11">Trivia Game</h1>  <p id="questionCounter" class="scoreCount"></p>
 
                     <!-- Where questions and options will be injected dynamically -->
                     <div id="quiz" class="quiz_container"></div>
 
                     <!-- Score display -->
-                    <p id="score" class="userScore">Score: 0</p>
+                    <p id="score" class="userScore h11">Score: 0</p>
+
+                   
 
                     <!-- Navigation buttons for the quiz -->
-                    <button id="next" style="display: none;" class="greenBtn">Next Question</button>
+                    <button id="next" style="display: none;" class="next">Next Question</button>
                    <button id="prev" class="prevBtn" style="display: none">Previous Question</button>
                     <button id="restart" class="prevBtn restartBtn" style="display: none">Restart Game</button>
                     <button id="home" class="prevBtn restartBtn" style="display: none">Game Categories</button>

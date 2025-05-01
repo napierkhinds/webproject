@@ -162,9 +162,16 @@ p {
 /* paragraph for category selcetion */ 
 .p2 {
   color: #000000;
-text-align:justify;
+text-align:center;
 }
 
+/* Styling for score count section in gameplay */
+.scoreCount
+{
+  color:  #000000;
+  font-size:large;
+  font-weight: 800;
+}
 
 /* H1 Heading styles */
 h1 {
@@ -187,7 +194,7 @@ h2 {
   transform: translateY(-15px);
 }
 
-/* Base button style (used as a fallback) */
+/* Default button styling */
 button {
   display: block;
   width: 100%;
@@ -213,19 +220,26 @@ button:hover {
   width: 300px;
 }
 
-/* Hover effect for answer buttons */
+/* Specific style for the 'Next Question' button */
 .answer:hover {
-  background-color: #bbb;
+  background-color: #bbb; /* Light grey on hover */
 }
 
-/* Specific style for the 'Next Question' button */
+/* Next button styling */
 .next {
-  background-color: #0F4C8D;
+  background: #000C5E;
+  width: 400px;
+  transition-duration: .4s;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 28px;
+  color: #fff;
 }
 
 /* Hover effect for next button */
 .next:hover {
-  background-color: #180D2B;
+background-color: #273ecf;
 }
 
 /* Hover effect for navigation buttons */

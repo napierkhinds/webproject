@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* HEADER STYLING */
+/* Header styling */
 header {
   position: relative;
   height: 200px;
@@ -20,71 +20,65 @@ header {
   text-align: center;
 }
 
-/* NAVIGATION BAR */
+/* Navigation bar */
 nav {
-  background-color: #121212;
-  /* Dark background */
+  background-color: #121212; /* Dark background */
   display: block;
   width: auto;
   text-align: center;
   margin: 15px;
 }
 
-/* BUTTONS IN NAVIGATION */
+/* Buttons in navigation */
 .navButtons {
   background: #24A7D0;
-  /* Button background */
   width: 150px;
-  transition-duration: .4s;
-  /* Smooth hover transition */
+  transition-duration: .4s; 
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   padding: 20px;
-  color: #ffffff;
-  /* White text */
+  color: #ffffff; 
   display: inline-block;
 }
 
-/* GLOBAL BODY STYLE */
+/* Global body style */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #121212;
   /* Dark mode background */
 }
 
-/* MAIN CONTENT CONTAINER */
+/* Main content container */
 .container {
   background: #229EC9;
-  /* Bright blue background */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px #ffffff;
-  /* White glow */
   text-align: center;
   color: #ffffff;
-  /* White text */
+
 }
 
-/* QUIZ WRAPPER */
+/* Quiz wrapper */
 .quiz_container {
   margin: auto;
   text-align: center;
 }
 
-/* USER SCORE DISPLAY */
+/* User score display */
 .userScore {
   color: #ffffff;
   font-size: x-large;
   font-weight: bold;
 }
 
-/* CLEAR FLOATS */
+/* Clear floats */
 .clear {
   clear: both;
 }
 
-/* COLUMN LAYOUT FOR GRID SECTIONS */
+/* Column layout for grid sections */
 .column {
   float: left;
   width: 33.33%;
@@ -93,45 +87,42 @@ body {
   text-align: center;
 }
 
-/* IMAGES INSIDE COLUMNS */
+/* Images inside columns */
 .column img {
   margin: 20px 0;
 }
 
-/* STYLE FOR IMAGE THUMBNAILS */
+/* Style for image thumbnails */
 .solid {
   border-style: none;
   border-radius: 25%;
   border-color: #2B88D0;
   width: 100%;
   height: auto;
-  /* Maintain aspect ratio */
+  
 }
 
-/* CENTER ALIGNMENT */
+/* Center alignment */
 .center {
   text-align: center;
 }
 
-/* LOGO IMAGE STYLING */
+/* Logo image styling */
 .logo {
-  border-radius: 50%;
-  /* Circular shape */
+  border-radius: 50%; /* Circular shape */
   width: 10%;
-  /* Relative size */
-  box-shadow: 0 10px 15px #24A7D0;
-  /* Shadow glow */
+  box-shadow: 0 10px 15px #24A7D0; /* Shadow glow */
   max-width: 100%;
   height: auto;
 }
 
-/* STYLES FOR ERROR MESSAGES */
+/* Styles for error messages */
 .red_text {
   color: red;
   margin: 10px 0;
 }
 
-/* PRIMARY BUTTON STYLING */
+/* Primary button styling */
 .greenBtn {
   background: #000C5E;
   width: 400px;
@@ -143,13 +134,13 @@ body {
   color: #fff;
 }
 
-/* HOVER EFFECT FOR PRIMARY BUTTON */
+/* Hover effect for primary button */
 .greenBtn:hover {
   color: #ffffff;
   background: #24A7D0;
 }
 
-/* PREVIOUS/NAVIGATION BUTTON STYLING */
+/* Previous/navigation button styling */
 .prevBtn {
   width: 400px;
   transition-duration: .4s;
@@ -161,7 +152,7 @@ body {
   background-color: #08089c;
 }
 
-/* FOOTER STYLING */
+/* Footer styling */
 footer {
   background-color: #121212;
   padding: 20px;
@@ -171,36 +162,49 @@ footer {
   position: relative;
 }
 
-/* TEXT ELEMENT COLORS */
+/* Pararaph Text element colors */
 p {
   color: #F5F5F5;
 }
-
+/* paragraph for category selcetion */ 
 .p2 {
   color: #F5F5F5;
-text-align:justify;
+  text-align: center;
+}
+.scoreCount
+{
+  color:  #000000;
+  font-size:large;
+  font-weight: 800;
 }
 
-/* H1 Heading styles */
+
+/* H1 heading styles */
 h1 {
   color: rgb(255, 255, 255);
 }
+
 h2 {
   color: #F5F5F5;
 }
 
-/* IMAGE HOVER ANIMATION */
+/* heading styles used for quiz container in dark mode */
+.h11 {
+  color: rgb(0, 0, 0);
+}
+
+
+/* Shadow hover effect for images */
 .shadow-image {
   transition: box-shadow 0.2s ease, transform 0.3s ease;
 }
 
 .shadow-image:hover {
   box-shadow: 0 5px 15px #24A7D0;
-  transform: translateY(-15px);
-  /* Subtle lift effect */
+  transform: translateY(-15px); /* Subtle lift effect */
 }
 
-/* DEFAULT BUTTON STYLING */
+/* Default button styling */
 button {
   display: block;
   width: 100%;
@@ -211,37 +215,44 @@ button {
   cursor: pointer;
   font-size: 16px;
   background-color: #007bff;
-  /* Bootstrap-style blue */
   color: white;
 }
 
+/* General button hover effect */
 button:hover {
-  background-color: #180D2B;
-  /* Dark purple on hover */
+  background-color: #180D2B; /* Dark purple on hover */
 }
 
-/* ANSWER CHOICE STYLING */
+/* Answer choice button styling */
 .answer {
   background-color: #353535;
   color: white;
   width: 300px;
 }
 
+/* Specific style for the 'Next Question' button */
 .answer:hover {
-  background-color: #bbb;
-  /* Light grey on hover */
+  background-color: #bbb; /* Light grey on hover */
 }
 
-/* NEXT BUTTON STYLING */
+/* Next button styling */
 .next {
-  background-color: #0F4C8D;
-}
+    background: #000C5E;
+    width: 400px;
+    transition-duration: .4s;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 28px;
+    color: #fff;
+  }
 
+/* Hover effect for next button */
 .next:hover {
-  background-color: #180D2B;
+  background-color: #273ecf;
 }
 
-/* NAV BUTTON HOVER */
+/* Nav button hover effect */
 .navButtons:hover {
   background-color: #000C5E;
 }

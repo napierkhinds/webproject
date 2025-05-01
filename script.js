@@ -51,12 +51,19 @@ $(document).ready(function () {
         beginGamePlay();
     });
 
-    // Start the game when start button is clicked
-    $("#startGameBtn").on('click', function (e) {
-        e.preventDefault();
-        $(".column").slideUp("slow");  // Hide category selection section
-        beginGamePlay();               // Start quiz logic
-    });
+  // Start the game when start button is clicked
+$("#startGameBtn").on('click', function (e) {
+    e.preventDefault();
+
+    // Check if a category is selected before continuing
+    if (!$("input[name='game_category']:checked").val()) {
+        $("#messages").html("Please select an option to continue...");
+        return; // Don't proceed further
+    }
+
+    $(".column").slideUp("slow");  // Hide category selection section
+    beginGamePlay();               // Start quiz logic
+});
 
     // Main game logic begins here
     function beginGamePlay() {
@@ -108,19 +115,25 @@ $(document).ready(function () {
             }
 
             // Display current question
-            function showQuestion() {
-                // End game if all questions have been answered
-                if (currentQuestionIndex >= questions.length) {
-                    quizContainer.innerHTML = `<h2>Game Over!</h2><p>Your score: ${score} / ${questions.length}</p>`;
-                    nextButton.style.display = "none";
-                    prevButton.style.display = "none";
-                    restartButton.style.display = "block";
-                    homeBtn.style.display = "block";
-                    return;
-                } else {
-                    restartButton.style.display = "none";
-                    homeBtn.style.display = "none";
-                }
+                function showQuestion() {
+                    // End game if all questions have been answered
+                    if (currentQuestionIndex >= questions.length) {
+                        quizContainer.innerHTML = `<h2>Game Over!</h2><p>Your score: ${score} / ${questions.length}</p>`;
+                        nextButton.style.display = "none";
+                        prevButton.style.display = "none";
+                        restartButton.style.display = "block";
+                        homeBtn.style.display = "block";
+                        return;
+                    } else {
+                        restartButton.style.display = "none";
+                        homeBtn.style.display = "none";
+                    }
+                
+                    // Show current question count
+                    document.getElementById("questionCounter").textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+                
+                    // Continue with rendering the question...
+                
 
                 const questionData = questions[currentQuestionIndex];
                 const answers = [...questionData.incorrect_answers, questionData.correct_answer];
